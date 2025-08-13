@@ -1,5 +1,5 @@
 import React from "react";
-import logoImage from "../assets/image/cafee.png";
+import logoImage from "../assets/image/logooo2.png";
 import AnimatedSection from "./AnimatedSection";
 
 const Footer = () => {
@@ -61,7 +61,7 @@ const Footer = () => {
 
       {/* Divider */}
       <div className="border-t border-white/30 mt-8 pt-4 flex flex-col md:flex-row items-center justify-between text-xs text-white/80 text-center md:text-left">
-        <p className="mb-2 md:mb-0">© 𝚂𝚊𝚗𝚍𝚌𝚊𝚏𝚎 𝟸𝟶𝟸𝟻. 𝙰𝚕𝚕 𝚁𝚒𝚐𝚑𝚝𝚜 𝚁𝚎𝚜𝚎𝚛𝚟𝚎𝚍</p>
+        <p className="mb-2 md:mb-0">© 𝙼𝚊𝚋𝚎𝚕𝚕 𝚌𝚊𝚏𝚎 𝟸𝟶𝟸𝟻. 𝙰𝚕𝚕 𝚁𝚒𝚐𝚑𝚝𝚜 𝚁𝚎𝚜𝚎𝚛𝚟𝚎𝚍</p>
         <div className="flex space-x-4">
           <a href="#" className="hover:underline">𝙿𝚛𝚒𝚟𝚊𝚌𝚢 𝙿𝚘𝚕𝚒𝚌𝚢</a>
           <a href="#" className="hover:underline">𝚃𝚎𝚛𝚖𝚜 𝚘𝚏 𝚄𝚜𝚎</a>

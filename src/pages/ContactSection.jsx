@@ -34,7 +34,7 @@ const ContactSection = () => {
                 href="mailto:Queenshead@grhotels.co.uk"
                 className="hover:text-[#8b6c53] transition-colors duration-200"
               >
-                Queenshead@grhotels.co.uk
+                𝙼𝚊𝚋𝚎𝚕𝚕@grhotels.co.uk
               </a>
             </p>
           </div>
