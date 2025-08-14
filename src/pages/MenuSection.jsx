@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import BreakfastImage from '../assets/image/ga7.webp';
 import LunchImage from '../assets/image/ga8.webp';
 import SandwichesImage from '../assets/image/ga4.webp';
@@ -38,30 +39,31 @@ const MenuSection = () => {
           {/* Menu Items */}
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {menuItems.map((item, index) => (
-              <a 
-                key={index} 
-                href={item.link} 
-                className="group flex flex-col items-center cursor-pointer"
-              >
-                <div 
-                  className="w-full h-64 md:h-80 overflow-hidden rounded-lg shadow-md transition-all duration-500 ease-out transform group-hover:scale-105 group-hover:shadow-xl"
-                  style={{ willChange: "transform" }}
-                >
-                  <img 
-                    src={item.img} 
-                    alt={item.title} 
-                    loading="lazy"
-                    className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
-                  />
-                </div>
-                <h3 className="mt-4 text-lg md:text-xl font-semibold text-gray-800 font-playfair group-hover:text-[#596528] transition-colors duration-300">
-                  {item.title}
-                </h3>
-                <span className="mt-2 text-gray-500 group-hover:text-[#596528] transition-colors duration-300">
-                  𝚅𝚒𝚎𝚠 𝙼𝚎𝚗𝚞 ›
-                </span>
-              </a>
-            ))}
+  <Link 
+    key={index} 
+    to={item.link} 
+    className="group flex flex-col items-center cursor-pointer"
+  >
+    <div 
+      className="w-full h-64 md:h-80 overflow-hidden rounded-lg shadow-md transition-all duration-500 ease-out transform group-hover:scale-105 group-hover:shadow-xl"
+      style={{ willChange: "transform" }}
+    >
+      <img 
+        src={item.img} 
+        alt={item.title} 
+        loading="lazy"
+        className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+      />
+    </div>
+    <h3 className="mt-4 text-lg md:text-xl font-semibold text-gray-800 font-playfair group-hover:text-[#596528] transition-colors duration-300">
+      {item.title}
+    </h3>
+    <span className="mt-2 text-gray-500 group-hover:text-[#596528] transition-colors duration-300">
+      𝚅𝚒𝚎𝚠 𝙼𝚎𝚗𝚞 ›
+    </span>
+  </Link>
+))}
+
           </div>
         </div>
       </div>
