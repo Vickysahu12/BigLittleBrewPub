@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import Hero from './pages/Hero'
 import MenuSection from './pages/MenuSection'
 import AboutSection from './pages/AboutSection'
+import CoffeeGallery from './pages/GallerySection'
 import ReservationSection from './pages/ReservationSection'
 import ContactSection from './pages/ContactSection'
 import Footer from './components/Footer'
@@ -30,6 +31,7 @@ const App = () => {
             <>
               <Hero />
               <MenuSection />
+              <CoffeeGallery/>
               <AboutSection />
               <ReservationSection />
               <ContactSection />

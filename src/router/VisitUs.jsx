@@ -1,5 +1,5 @@
 import React from 'react';
-import Cafe from "../assets/image/cafe shop.jpg"; // Background image
+import Cafe from "../assets/image/cafeshop.webp"; // Background image
 
 const VisitUs = () => {
   return (

@@ -1,11 +1,37 @@
-import React from "react";
-import logoImage from "../assets/image/logooo2.png";
-import AnimatedSection from "./AnimatedSection";
+import React, { useRef, useEffect } from "react";
+import logoImage from "../assets/image/logooo2.webp";
 
-const Footer = () => {
+// ✅ Pure footer to prevent unnecessary re-renders
+const Footer = React.memo(() => {
+  const footerRef = useRef(null);
+
+  useEffect(() => {
+    // Intersection Observer for smooth reveal only when visible
+    const observer = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("opacity-100", "translate-y-0");
+            obs.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: "50px" }
+    );
+
+    if (footerRef.current) {
+      observer.observe(footerRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <AnimatedSection>
-    <footer className="bg-[#b4937a] text-white pt-12 pb-6 px-6 sm:px-8 md:px-12 lg:px-20">
+    <footer
+      ref={footerRef}
+      className="bg-[#b4937a] text-white pt-12 pb-6 px-6 sm:px-8 md:px-12 lg:px-20 opacity-0 translate-y-5 transition-all duration-700 ease-out"
+      style={{ willChange: "transform, opacity" }}
+    >
       <div className="container mx-auto grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-5 text-center md:text-left">
         
         {/* Logo Section */}
@@ -15,6 +41,8 @@ const Footer = () => {
             alt="Cafe Logo"
             className="w-30 sm:w-32 md:w-40 object-contain mb-4"
             loading="lazy"
+            decoding="async"
+            fetchPriority="low" // ✅ Tell browser to load later
           />
         </div>
 
@@ -68,8 +96,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-    </AnimatedSection>
   );
-};
+});
 
 export default Footer;
