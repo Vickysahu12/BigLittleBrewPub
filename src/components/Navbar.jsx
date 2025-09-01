@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/image/logooo2.webp";
+import logo from "../assets/image/lig.webp";
 import { X, Menu } from "lucide-react";
 
 const Navbar = () => {
@@ -25,7 +25,7 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <nav className="w-full fixed top-0 z-50 bg-white">
+    <nav className="w-full fixed top-0 z-50 bg-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           {/* Left Links */}

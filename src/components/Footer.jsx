@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import logoImage from "../assets/image/logooo2.webp";
+import logoImage from "../assets/image/lig.webp";
 
 // ✅ Pure footer to prevent unnecessary re-renders
 const Footer = React.memo(() => {
