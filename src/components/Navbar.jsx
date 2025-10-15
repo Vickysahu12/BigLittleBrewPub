@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/image/lol.webp";
+import logo from "../assets/image/ligi.webp";
 import { X, Menu } from "lucide-react";
 
 const Navbar = () => {

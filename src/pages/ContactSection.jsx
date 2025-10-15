@@ -17,7 +17,7 @@ const ContactSection = () => {
               Contact Us
             </h2>
             <p className="text-gray-700 leading-relaxed text-base md:text-lg">
-              6 Sandgate, Berwick upon Tweed TD15 1EP, Berwick, United Kingdom
+              HPCL Pump, Opp Science Centre, Citylight, Surat, Gujarat 395007
             </p>
 
             <div className="text-gray-700 text-base md:text-lg space-y-1">

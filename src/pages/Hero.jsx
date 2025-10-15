@@ -29,7 +29,7 @@ const HeroSection = () => {
         <div className="relative z-10 text-center px-4">
           <p className="text-sm tracking-widest uppercase mb-2">Welcome to the</p>
           <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-4">
-            Olive Cafe & Pool
+            365 - The Travel Cafe
           </h1>
           <p className="text-lg md:text-xl font-light tracking-wide mb-8">
             BREAKFAST / LUNCH / TRAY-BAKES / COFFEE
